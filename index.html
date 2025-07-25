@@ -567,81 +567,78 @@
         
         <!-- Signup Form -->
         <section id="signup">
-            <h2 class="section-title">Join the Moving Crew</h2>
-            
-            <div class="form-container">
-                <div class="card">
-                    <form id="signup-form">
-                        <div class="form-group">
-                            <label for="name">Your Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="e.g. Alex Johnson">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="contact">Phone or Email *</label>
-                            <input type="text" id="contact" name="contact" required placeholder="e.g. 555-1234 or alex@email.com">
-                        </div>
-                        
-                        <div class="checkbox-group">
-                            <legend>Can you help?</legend>
-                            
-                            <div class="checkbox-option">
-                                <input type="checkbox" id="help-monday" name="help" value="monday">
-                                <label for="help-monday">✅ Yes on Wednesday night (7/30)</label>
-                            </div>
-                            
-                            <div class="checkbox-option">
-                                <input type="checkbox" id="help-tuesday" name="help" value="tuesday">
-                                <label for="help-tuesday">✅ Yes on Thursday (7/31)</label>
-                            </div>
-                            
-                            <div class="checkbox-option">
-                                <input type="checkbox" id="cant-help" name="help" value="cant">
-                                <label for="cant-help">❌ Can't help but sending love</label>
-                            </div>
-                        </div>
-                        
-                        <div class="checkbox-group">
-                            <legend>Special Skills (Optional)</legend>
-                            
-                            <div class="checkbox-option">
-                                <input type="checkbox" id="truck" name="truck" value="yes">
-                                <label for="truck">🚚 I have a truck or large vehicle</label>
-                            </div>
-                            
-                            <div class="checkbox-option">
-                                <input type="checkbox" id="lift" name="lift" value="yes">
-                                <label for="lift">💪 I can lift heavy things</label>
-                            </div>
-                        </div>
-                        
-                        <button type="submit" class="btn">Sign Up to Help!</button>
-                    </form>
+    <h2 class="section-title">Join the Moving Crew</h2>
+    
+    <div class="form-container">
+        <div class="card">
+            <form id="signup-form" 
+                  action="https://docs.google.com/forms/d/e/1FAIpQLScZcQNW7ulHOjw7RB8u8I6nyp4A9hmjg_hfmZ2GmCSyt4sH3Q/formResponse" 
+                  method="POST" 
+                  target="hidden_iframe" 
+                  onsubmit="submitted=true;">
+
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="entry.2005620554" required placeholder="e.g. Alex Johnson">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact">Phone or Email *</label>
+                    <input type="text" id="contact" name="entry.1045781291" required placeholder="e.g. 555-1234 or alex@email.com">
+                </div>
+                
+                <div class="checkbox-group">
+                    <legend>Can you help?</legend>
                     
-                    <div id="thank-you">
-                        <h2>Thank You! 🎉</h2>
-                        <p>We're so grateful you're joining our moving adventure! You'll receive the exact address and final details via text/email soon.</p>
-                        <p>Get ready for pizza, laughs, and the satisfaction of helping friends avoid a moving disaster! See you soon!</p>
-                        <div style="font-size: 5rem; margin: 30px 0;">🤝</div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="help-wednesday" name="entry.839337160" value="Yes on Wednesday night (7/30)">
+                        <label for="help-wednesday">✅ Yes on Wednesday night (7/30)</label>
+                    </div>
+                    
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="help-thursday" name="entry.839337160" value="Yes on Thursday (7/31)">
+                        <label for="help-thursday">✅ Yes on Thursday (7/31)</label>
+                    </div>
+                    
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="cant-help" name="entry.839337160" value="Can't help but sending love">
+                        <label for="cant-help">❌ Can't help but sending love</label>
                     </div>
                 </div>
                 
-                <div class="privacy">
-                    <p><i class="fas fa-lock"></i> <strong>Privacy Note:</strong> Your contact information will only be used to send the address and final moving details. No spam, no sharing, no weirdness. Promise!</p>
+                <div class="checkbox-group">
+                    <legend>Special Skills (Optional)</legend>
+                    
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="truck" name="entry.1889234854" value="I have a truck or large vehicle">
+                        <label for="truck">🚚 I have a truck or large vehicle</label>
+                    </div>
+                    
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="lift" name="entry.1889234854" value="I can lift heavy things">
+                        <label for="lift">💪 I can lift heavy things</label>
+                    </div>
                 </div>
+                
+                <button type="submit" class="btn">Sign Up to Help!</button>
+            </form>
+            
+            <div id="thank-you">
+                <h2>Thank You! 🎉</h2>
+                <p>We're so grateful you're joining our moving adventure! You'll receive the exact address and final details via text/email soon.</p>
+                <p>Get ready for pizza, laughs, and the satisfaction of helping friends avoid a moving disaster! See you soon!</p>
+                <div style="font-size: 5rem; margin: 30px 0;">🤝</div>
             </div>
-        </section>
+        </div>
         
-        <!-- Admin Panel (Hidden by default) -->
-        <div class="admin-panel" style="display: none;" id="admin-panel">
-            <h3><i class="fas fa-user-shield"></i> Admin Panel</h3>
-            <p>All signup responses:</p>
-            <textarea id="responses" readonly></textarea>
-            <button class="btn" onclick="copyResponses()"><i class="fas fa-copy"></i> Copy Responses</button>
+        <div class="privacy">
+            <p><i class="fas fa-lock"></i> <strong>Privacy Note:</strong> Your contact information will only be used to send the address and final moving details. No spam, no sharing, no weirdness. Promise!</p>
         </div>
     </div>
-    
-    <script>
+</section>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {showThankYou();}"></iframe>
+
         // Store responses in localStorage
         const storageKey = 'movingSignups';
         
