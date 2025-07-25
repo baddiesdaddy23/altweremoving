@@ -373,29 +373,7 @@
             font-size: 0.95rem;
             color: #555;
         }
-        
-        /* Admin Panel */
-        .admin-panel {
-            background: #f8f9fa;
-            border-radius: var(--border-radius);
-            padding: 25px;
-            margin-top: 40px;
-            border: 2px dashed var(--primary);
-        }
-        
-        .admin-panel h3 {
-            text-align: center;
-            color: var(--secondary);
-            margin-bottom: 20px;
-        }
-        
-        .admin-panel textarea {
-            width: 100%;
-            min-height: 150px;
-            font-family: monospace;
-            margin-bottom: 15px;
-        }
-        
+
         /* Animations */
         @keyframes fadeInDown {
             from {
@@ -491,7 +469,6 @@
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>We're Moving!</h1>
@@ -509,7 +486,6 @@
     </section>
     
     <div class="container">
-        <!-- What We Need Section -->
         <section id="what-we-need">
             <h2 class="section-title">What We Need Help With</h2>
             
@@ -529,7 +505,6 @@
             </div>
         </section>
         
-        <!-- What You Get Section -->
         <section id="what-you-get">
             <h2 class="section-title">What You Get</h2>
             
@@ -565,164 +540,96 @@
             </div>
         </section>
         
-        <!-- Signup Form -->
         <section id="signup">
-    <h2 class="section-title">Join the Moving Crew</h2>
-    
-    <div class="form-container">
-        <div class="card">
-            <form id="signup-form" 
-                  action="https://docs.google.com/forms/d/e/1FAIpQLScZcQNW7ulHOjw7RB8u8I6nyp4A9hmjg_hfmZ2GmCSyt4sH3Q/formResponse" 
-                  method="POST" 
-                  target="hidden_iframe" 
-                  onsubmit="submitted=true;">
-
-                <div class="form-group">
-                    <label for="name">Your Name *</label>
-                    <input type="text" id="name" name="entry.2005620554" required placeholder="e.g. Alex Johnson">
-                </div>
-                
-                <div class="form-group">
-                    <label for="contact">Phone or Email *</label>
-                    <input type="text" id="contact" name="entry.1045781291" required placeholder="e.g. 555-1234 or alex@email.com">
-                </div>
-                
-                <div class="checkbox-group">
-                    <legend>Can you help?</legend>
-                    
-                    <div class="checkbox-option">
-                        <input type="checkbox" id="help-wednesday" name="entry.839337160" value="Yes on Wednesday night (7/30)">
-                        <label for="help-wednesday">✅ Yes on Wednesday night (7/30)</label>
-                    </div>
-                    
-                    <div class="checkbox-option">
-                        <input type="checkbox" id="help-thursday" name="entry.839337160" value="Yes on Thursday (7/31)">
-                        <label for="help-thursday">✅ Yes on Thursday (7/31)</label>
-                    </div>
-                    
-                    <div class="checkbox-option">
-                        <input type="checkbox" id="cant-help" name="entry.839337160" value="Can't help but sending love">
-                        <label for="cant-help">❌ Can't help but sending love</label>
-                    </div>
-                </div>
-                
-                <div class="checkbox-group">
-                    <legend>Special Skills (Optional)</legend>
-                    
-                    <div class="checkbox-option">
-                        <input type="checkbox" id="truck" name="entry.1889234854" value="I have a truck or large vehicle">
-                        <label for="truck">🚚 I have a truck or large vehicle</label>
-                    </div>
-                    
-                    <div class="checkbox-option">
-                        <input type="checkbox" id="lift" name="entry.1889234854" value="I can lift heavy things">
-                        <label for="lift">💪 I can lift heavy things</label>
-                    </div>
-                </div>
-                
-                <button type="submit" class="btn">Sign Up to Help!</button>
-            </form>
+            <h2 class="section-title">Join the Moving Crew</h2>
             
-            <div id="thank-you">
-                <h2>Thank You! 🎉</h2>
-                <p>We're so grateful you're joining our moving adventure! You'll receive the exact address and final details via text/email soon.</p>
-                <p>Get ready for pizza, laughs, and the satisfaction of helping friends avoid a moving disaster! See you soon!</p>
-                <div style="font-size: 5rem; margin: 30px 0;">🤝</div>
+            <div class="form-container">
+                <div class="card">
+                    <form id="signup-form" 
+                          action="https://docs.google.com/forms/d/e/1FAIpQLScZcQNW7ulHOjw7RB8u8I6nyp4A9hmjg_hfmZ2GmCSyt4sH3Q/formResponse" 
+                          method="POST" 
+                          target="hidden_iframe" 
+                          onsubmit="submitted=true;">
+
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="entry.2005620554" required placeholder="e.g. Alex Johnson">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact">Phone or Email *</label>
+                            <input type="text" id="contact" name="entry.1045781291" required placeholder="e.g. 555-1234 or alex@email.com">
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <legend>Can you help?</legend>
+                            
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="help-wednesday" name="entry.839337160" value="Yes on Wednesday night (7/30)">
+                                <label for="help-wednesday">✅ Yes on Wednesday night (7/30)</label>
+                            </div>
+                            
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="help-thursday" name="entry.839337160" value="Yes on Thursday (7/31)">
+                                <label for="help-thursday">✅ Yes on Thursday (7/31)</label>
+                            </div>
+                            
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="cant-help" name="entry.839337160" value="Can't help but sending love">
+                                <label for="cant-help">❌ Can't help but sending love</label>
+                            </div>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <legend>Special Skills (Optional)</legend>
+                            
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="truck" name="entry.1889234854" value="I have a truck or large vehicle">
+                                <label for="truck">🚚 I have a truck or large vehicle</label>
+                            </div>
+                            
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="lift" name="entry.1889234854" value="I can lift heavy things">
+                                <label for="lift">💪 I can lift heavy things</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn">Sign Up to Help!</button>
+                    </form>
+                    
+                    <div id="thank-you">
+                        <h2>Thank You! 🎉</h2>
+                        <p>We're so grateful you're joining our moving adventure! You'll receive the exact address and final details via text/email soon.</p>
+                        <p>Get ready for pizza, laughs, and the satisfaction of helping friends avoid a moving disaster! See you soon!</p>
+                        <div style="font-size: 5rem; margin: 30px 0;">🤝</div>
+                    </div>
+                </div>
+                
+                <div class="privacy">
+                    <p><i class="fas fa-lock"></i> <strong>Privacy Note:</strong> Your contact information will only be used to send the address and final moving details. No spam, no sharing, no weirdness. Promise!</p>
+                </div>
             </div>
-        </div>
-        
-        <div class="privacy">
-            <p><i class="fas fa-lock"></i> <strong>Privacy Note:</strong> Your contact information will only be used to send the address and final moving details. No spam, no sharing, no weirdness. Promise!</p>
-        </div>
-    </div>
-</section>
+        </section>
 
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {showThankYou();}"></iframe>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {showThankYou();}"></iframe>
+    </div> 
 
-        // Store responses in localStorage
-        const storageKey = 'movingSignups';
-        
-        document.addEventListener('DOMContentLoaded', function() {
+    <script>
+        // This variable helps the iframe know when to trigger the thank you message
+        let submitted = false;
+
+        // This function will hide the form and display your custom thank you message
+        function showThankYou() {
             const form = document.getElementById('signup-form');
             const thankYou = document.getElementById('thank-you');
             
-            // Check for admin mode
-            const urlParams = new URLSearchParams(window.location.search);
-            if(urlParams.get('admin') === 'secret123') {
-                document.getElementById('admin-panel').style.display = 'block';
-                updateResponsesDisplay();
-            }
-            
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Get form values
-                const name = document.getElementById('name').value;
-                const contact = document.getElementById('contact').value;
-                const helpOptions = getSelectedOptions('help');
-                const truck = document.getElementById('truck').checked ? 'Yes' : 'No';
-                const lift = document.getElementById('lift').checked ? 'Yes' : 'No';
-                
-                // Create response object
-                const response = {
-                    name,
-                    contact,
-                    help: helpOptions,
-                    truck,
-                    lift,
-                    timestamp: new Date().toLocaleString()
-                };
-                
-                // Save to localStorage
-                saveResponse(response);
-                
-                // Hide form and show thank you message
-                form.style.display = 'none';
-                thankYou.style.display = 'block';
-                
-                // Smooth scroll to thank you message
-                thankYou.scrollIntoView({ behavior: 'smooth' });
-            });
-            
-            // Helper function to get selected options
-            function getSelectedOptions(name) {
-                const options = document.querySelectorAll(`input[name="${name}"]:checked`);
-                return Array.from(options).map(opt => opt.nextElementSibling.textContent);
-            }
-            
-            // Save response to localStorage
-            function saveResponse(response) {
-                let responses = JSON.parse(localStorage.getItem(storageKey)) || [];
-                responses.push(response);
-                localStorage.setItem(storageKey, JSON.stringify(responses));
-            }
-            
-            // Update the responses display in admin panel
-            function updateResponsesDisplay() {
-                const responses = JSON.parse(localStorage.getItem(storageKey)) || [];
-                const textarea = document.getElementById('responses');
-                
-                if(responses.length === 0) {
-                    textarea.value = "No responses yet.";
-                    return;
-                }
-                
-                let text = `Total Signups: ${responses.length}\n\n`;
-                
-                responses.forEach((res, index) => {
-                    text += `Response #${index + 1}:\n`;
-                    text += `Name: ${res.name}\n`;
-                    text += `Contact: ${res.contact}\n`;
-                    text += `Availability: ${res.help.join(', ') || 'None'}\n`;
-                    text += `Truck: ${res.truck}\n`;
-                    text += `Heavy Lifting: ${res.lift}\n`;
-                    text += `Submitted: ${res.timestamp}\n\n`;
-                });
-                
-                textarea.value = text;
-            }
-            
-            // Add subtle animations to cards when they come into view
+            form.style.display = 'none';
+            thankYou.style.display = 'block';
+            thankYou.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // This script adds subtle animations to cards when they scroll into view
             const cards = document.querySelectorAll('.card, .perk-card');
             
             const observer = new IntersectionObserver((entries) => {
@@ -741,14 +648,6 @@
                 observer.observe(card);
             });
         });
-        
-        // Admin function to copy responses
-        function copyResponses() {
-            const textarea = document.getElementById('responses');
-            textarea.select();
-            document.execCommand('copy');
-            alert('Responses copied to clipboard!');
-        }
     </script>
 </body>
 </html>
